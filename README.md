@@ -44,7 +44,7 @@ curl -i http://127.0.0.1:8083/connectors/exampledb-connector
 docker run --tty --network kafka-net confluentinc/cp-kafkacat kafkacat -b kafka:9092 -C -s key=s -s value=avro -r http://schema-registry:8081 -t postgres.public.student
 ```
 
-10. Add SQl data to monitor changes in kafka topics:
+10. Add SQL data to monitor changes in kafka topics:
  * open additional terminal window
  * open docker container list:
 
