@@ -6,7 +6,8 @@
 ---
 ### Task: Create the Kafka topics monitoring
     1. Kafka must produce topicks with changes in Postgres 
-    2. Consume creted topics
+    2. Consume created topics
+
 ---
 ## Progress of work:
 
@@ -41,9 +42,8 @@ curl -i http://127.0.0.1:8083/connectors/exampledb-connector
 docker run --tty --network kafka-net confluentinc/cp-kafkacat kafkacat -b kafka:9092 -C -s key=s -s value=avro -r http://schema-registry:8081 -t postgres.public.student
 ```
 
-[1]:
-[2]:
-[3]:
-[4]:
-[5]:
-[6]:
+[1]:https://docs.docker.com/engine/install/ubuntu/
+[2]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/Dockerfile
+[3]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/db/init.sql
+[4]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/docker-compose.yaml
+[5]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/debezium.json
