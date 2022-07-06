@@ -1,12 +1,14 @@
 # Docker Postgres Debezium Kafka
 
 ---
-### Skills:`Docker` `Docker-compose` `Postgres` `Debezium` `Zookeeper` `Kafka`
+### Skills and tools:
+`Docker` `Docker-compose` `Postgres` `Debezium` `Zookeeper` `Kafka`
 
 ---
-### Task: Create the Kafka topics monitoring
-    1. Kafka must produce topicks with changes in Postgres 
-    2. Consume created topics
+### Task: Create the Kafka topics monitoring pipeline
+
+1. Kafka must produce topicks with changes in Postgres 
+2. Consume created topics
 
 ---
 ## Progress of work:
