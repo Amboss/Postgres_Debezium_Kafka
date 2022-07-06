@@ -43,8 +43,8 @@ curl -i http://127.0.0.1:8083/connectors/exampledb-connector
 ```shell
 docker run --tty --network kafka-net confluentinc/cp-kafkacat kafkacat -b kafka:9092 -C -s key=s -s value=avro -r http://schema-registry:8081 -t postgres.public.student
 ```
-10. Add SQl dato to monitor changes in kafka topics:
- * Open additional terminal window
+10. Add SQl data to monitor changes in kafka topics:
+ * open additional terminal window
  * open docker container list:
 
 ```shell
@@ -69,14 +69,14 @@ $ psql -U docker -d exampledb -W
 ```shell
 $ INSERT INTO student VALUES (04, 'Ironman');
 ```
- * Kafka will produce new topic with values (04, 'Ironman')
+ * Kafka will produce new topic with values (04, 'Ironman') in host terminal
 
  * update data in *student* table:
 
 ```shell
 $ UPDATE student SET name='Hulk' WHERE id=04;
 ```
- * Kafka will produce new topic with values (04, 'Hulk')
+ * Kafka will produce new topic with values (04, 'Hulk') in host terminal
 
 
 [1]:https://docs.docker.com/engine/install/ubuntu/
