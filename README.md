@@ -81,7 +81,7 @@ $ UPDATE student SET name='Hulk' WHERE id=04;
 
 
 [1]:https://docs.docker.com/engine/install/ubuntu/
-[2]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/Dockerfile
-[3]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/db/init.sql
-[4]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/docker-compose.yaml
-[5]:https://github.com/Amboss/Postgres_Debezium_Kafka/blob/master/debezium.json
+[2]:https://github.com/s-evsyukov/Postgres_Debezium_Kafka/blob/fa83b0c7dc4ba28964af6ed0a4584106237ed821/Dockerfile
+[3]:https://github.com/s-evsyukov/Postgres_Debezium_Kafka/blob/fa83b0c7dc4ba28964af6ed0a4584106237ed821/db/init.sql
+[4]:https://github.com/s-evsyukov/Postgres_Debezium_Kafka/blob/fa83b0c7dc4ba28964af6ed0a4584106237ed821/docker-compose.yaml
+[5]:https://github.com/s-evsyukov/Postgres_Debezium_Kafka/blob/fa83b0c7dc4ba28964af6ed0a4584106237ed821/debezium.json
