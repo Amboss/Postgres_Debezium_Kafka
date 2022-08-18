@@ -38,13 +38,17 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
 curl -i http://127.0.0.1:8083/connectors/exampledb-connector
 ```
 
-9. Initiate the kafka topics monitoring
+9. Get default container network name:
+```shell
+docker network list
+```
 
+10. change "*kafka-net*" by container network name and initiate the kafka topics monitoring
 ```shell
 docker run --tty --network kafka-net confluentinc/cp-kafkacat kafkacat -b kafka:9092 -C -s key=s -s value=avro -r http://schema-registry:8081 -t postgres.public.student
 ```
 
-10. Add SQL data to monitor changes in kafka topics:
+11. Add SQL data to monitor changes in kafka topics:
  * open additional terminal window
  * open docker container list:
 
