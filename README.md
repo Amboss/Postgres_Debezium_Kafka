@@ -43,7 +43,7 @@ curl -i http://127.0.0.1:8083/connectors/exampledb-connector
 docker network list
 ```
 
-10. change "*kafka-net*" by container network name and initiate the kafka topics monitoring
+10. change "*kafka-net*" to container network name and initiate the kafka topics monitoring
 ```shell
 docker run --tty --network kafka-net confluentinc/cp-kafkacat kafkacat -b kafka:9092 -C -s key=s -s value=avro -r http://schema-registry:8081 -t postgres.public.student
 ```
